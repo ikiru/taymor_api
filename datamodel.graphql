@@ -1,0 +1,65 @@
+type User {
+  id: ID! @unique
+  name: String!
+}
+
+type Color {
+  id: ID! @unique
+  name: String!
+}
+
+type ActiveLevel{
+  id: ID! @unique
+  name: String!
+}
+
+type Keyword {
+  id: ID! @unique
+  name: String!
+}
+
+type LocationType {
+  id: ID! @unique
+  name: String!
+}
+
+type Rental_length {
+  id: ID! @unique
+  days: Int!
+}
+
+type RenterType {
+  id: ID! @unique
+  name: String!
+}
+
+type Role {
+  id: ID! @unique
+  name: String!
+}
+
+type SecurityLevel {
+  id: ID! @unique
+  name: String!
+}
+
+type Show {
+  id: ID! @unique
+  name: String!
+}
+
+type Size {
+  id: ID! @unique
+  sex: String!
+  size: String!
+}
+
+type TimePeriod {
+  id: ID! @unique
+  name: String!
+}
+
+type CostumeStatus {
+  id: ID! @unique
+  name: String!
+}
