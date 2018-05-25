@@ -63,3 +63,43 @@ type CostumeStatus {
   id: ID! @unique
   name: String!
 }
+
+type Costume {
+  id: ID! @unique
+  name: String!
+  qrCode: String!
+}
+
+type Business {
+  id: ID! @unique
+  name: String!
+}
+
+type Location {
+  id: ID! @unique
+  name: String!
+  address: String!
+  city: String!
+  state: String!
+  zip: String!
+  phone: String!
+  email: String!
+}
+
+type Employees {
+  id: ID! @unique
+  fname: String!
+  lname: String!
+}
+
+# more info
+
+type Renter {
+  id: ID! @unique
+  name: String!
+}
+
+type Invoice {
+  id: ID! @unique
+  name: String!
+}
