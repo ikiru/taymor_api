@@ -1,0 +1,105 @@
+type User {
+  id: ID! @unique
+  name: String!
+}
+
+type Color {
+  id: ID! @unique
+  name: String!
+}
+
+type ActiveLevel{
+  id: ID! @unique
+  name: String!
+}
+
+type Keyword {
+  id: ID! @unique
+  name: String!
+}
+
+type LocationType {
+  id: ID! @unique
+  name: String!
+}
+
+type Rental_length {
+  id: ID! @unique
+  days: Int!
+}
+
+type RenterType {
+  id: ID! @unique
+  name: String!
+}
+
+type Role {
+  id: ID! @unique
+  name: String!
+}
+
+type SecurityLevel {
+  id: ID! @unique
+  name: String!
+}
+
+type Show {
+  id: ID! @unique
+  name: String!
+}
+
+type Size {
+  id: ID! @unique
+  sex: String!
+  size: String!
+}
+
+type TimePeriod {
+  id: ID! @unique
+  name: String!
+}
+
+type CostumeStatus {
+  id: ID! @unique
+  name: String!
+}
+
+type Costume {
+  id: ID! @unique
+  name: String!
+  qrCode: String!
+}
+
+type Business {
+  id: ID! @unique
+  name: String!
+}
+
+type Location {
+  id: ID! @unique
+  name: String!
+  address: String!
+  city: String!
+  state: String!
+  zip: String!
+  phone: String!
+  email: String!
+}
+
+type Employees {
+  id: ID! @unique
+  fname: String!
+  lname: String!
+}
+
+# more info
+
+type Renter {
+  id: ID! @unique
+  name: String!
+}
+
+type Invoice {
+  id: ID! @unique
+  name: String!
+}
