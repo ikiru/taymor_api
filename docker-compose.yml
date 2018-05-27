@@ -13,10 +13,17 @@ services:
         databases:
           default:
             connector: mysql
-            host: localhost
-            port: 1433
+            host: mysql
+            port: 3306
             user: root
-            password: Pepper00~~
+            password: prisma
             migrations: true
-
-
+  mysql:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: prisma
+    volumes:
+      - mysql:/var/lib/mysql
+volumes:
+  mysql:
