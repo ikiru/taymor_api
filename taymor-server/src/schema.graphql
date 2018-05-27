@@ -1,0 +1,10 @@
+type Query {
+  colors(searchString: String): [Colors!]!
+  user(id: ID!): User
+}
+
+type Mutation {
+  createColor(colorId: ID!, name: String!): Colors
+  publish(id: ID!):  Colors
+  deleteColor(id: ID!):  Colors
+}
