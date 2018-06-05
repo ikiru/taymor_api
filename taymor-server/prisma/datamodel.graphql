@@ -3,22 +3,7 @@ type User {
   name: String!
 }
 
-type Color {
-  id: ID! @unique
-  name: String!
-}
-
 type ActiveLevel{
-  id: ID! @unique
-  name: String!
-}
-
-type Keyword {
-  id: ID! @unique
-  name: String!
-}
-
-type LocationType {
   id: ID! @unique
   name: String!
 }
@@ -59,18 +44,36 @@ type TimePeriod {
   name: String!
 }
 
+type Costume {
+  id: ID! @unique
+  name: String!
+  qrCode: String!
+  costumeStatus:[CostumeStatus!]!
+  timePeriod:[TimePeriod!]!
+  size:[Size!]!
+  show:[Show!]!
+  PrimeColorID:[Color!]!
+  SecondaryColorID:[Color!]!
+}
+
 type CostumeStatus {
   id: ID! @unique
   name: String!
 }
 
-type Costume {
+type Color {
   id: ID! @unique
   name: String!
-  qrCode: String!
 }
 
 type Business {
+  id: ID! @unique
+  name: String!
+  businessTypeID:[BusinessType!]!
+  locationID:[Location!]!
+}
+
+type BusinessType {
   id: ID! @unique
   name: String!
 }
@@ -84,9 +87,16 @@ type Location {
   zip: String!
   phone: String!
   email: String!
+  locationTypeID: [LocationType!]!
+  employeeID: [Employee!]!
 }
 
-type Employees {
+type LocationType {
+  id: ID! @unique
+  name: String!
+}
+
+type Employee {
   id: ID! @unique
   fname: String!
   lname: String!
@@ -103,3 +113,4 @@ type Invoice {
   id: ID! @unique
   name: String!
 }
+
